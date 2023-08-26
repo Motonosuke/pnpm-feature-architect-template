@@ -7,7 +7,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.packageManager": "yarn",
+  // "eslint.packageManager": "pnpm",
   "eslint.run": "onSave",
   // Prettier
   "prettier.configPath": ".prettierrc.json",

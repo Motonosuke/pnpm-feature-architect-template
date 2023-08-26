@@ -2,6 +2,9 @@
   "name": "pnpm-feature-architect-template",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.13"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,7 +17,20 @@
     "lint:markup-lint": "markuplint 'src/**/*.{jsx,tsx}'",
     "lint:github-actions": "eslint --ext .js,.ts,.tsx",
     "lint:ts-prune": "ts-prune",
-    "lint:all": "yarn type-check && yarn lint:prettier && yarn lint:eslint && yarn lint:markup-lint && yarn lint:secretlint && yarn lint:ls-lint && yarn lint:ts-prune"
+    "lint:all": "pnpm typecheck && pnpm lint:prettier && pnpm lint:eslint && pnpm lint:markup-lint && pnpm lint:secretlint && pnpm lint:ls-lint && pnpm lint:ts-prune",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./src/**/*.{jsx,js,tsx,ts}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "@types/node": "20.5.6",
@@ -28,11 +44,18 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "@ls-lint/ls-lint": "^2.0.1",
+    "@markuplint/jsx-parser": "^3.9.0",
+    "@markuplint/react-spec": "^3.10.0",
+    "@secretlint/secretlint-rule-preset-recommend": "^7.0.7",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "5.50.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-import-access": "^2.1.1",
@@ -40,7 +63,12 @@
     "eslint-plugin-strict-dependencies": "^1.2.1",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "eslint-plugin-typescript-sort-keys": "^2.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "markuplint": "^3.12.0",
     "prettier": "^3.0.2",
-    "prettier-plugin-tailwindcss": "^0.5.3"
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "secretlint": "^7.0.7",
+    "ts-prune": "^0.10.3"
   }
 }
