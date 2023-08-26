@@ -1,5 +1,9 @@
 import React from 'react';
 
-export const Sample = () => {
-  return <div>Sample</div>;
+type Props = {
+  isOpen: boolean;
+};
+
+export const Sample = ({ isOpen }: Props) => {
+  return <div>Sample {isOpen}</div>;
 };

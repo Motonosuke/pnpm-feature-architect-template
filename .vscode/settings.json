@@ -19,5 +19,6 @@
     "markuplint",
     "tailwindcss",
     "typecheck"
-  ]
+  ],
+  "typescript.preferences.importModuleSpecifier": "non-relative",
 }
