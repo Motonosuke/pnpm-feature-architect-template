@@ -17,6 +17,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".hygen/feature/new/index.js", ".hygen/page/new/index.js"],
   "exclude": ["node_modules"]
 }
