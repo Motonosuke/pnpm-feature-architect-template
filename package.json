@@ -21,7 +21,7 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "create:page": "hygen page new",
-    "create:component": "hygen component new"
+    "create:feature": "hygen feature new"
   },
   "husky": {
     "hooks": {
