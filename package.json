@@ -19,7 +19,9 @@
     "lint:ts-prune": "ts-prune",
     "lint:all": "pnpm typecheck && pnpm lint:prettier && pnpm lint:eslint && pnpm lint:markup-lint && pnpm lint:secretlint && pnpm lint:ls-lint && pnpm lint:ts-prune",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "create:page": "hygen page new",
+    "create:component": "hygen component new"
   },
   "husky": {
     "hooks": {
@@ -67,6 +69,7 @@
     "eslint-plugin-tailwindcss": "^3.13.0",
     "eslint-plugin-typescript-sort-keys": "^2.3.0",
     "husky": "^8.0.3",
+    "hygen": "^6.2.11",
     "lint-staged": "^14.0.1",
     "markuplint": "^3.12.0",
     "nookies": "^2.5.2",
