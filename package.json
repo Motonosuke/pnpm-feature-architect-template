@@ -78,6 +78,7 @@
     "eslint-plugin-storybook": "0.6.13",
     "eslint-plugin-strict-dependencies": "1.2.1",
     "eslint-plugin-tailwindcss": "3.13.0",
+    "eslint-plugin-tree-shakable": "^1.0.0",
     "eslint-plugin-typescript-sort-keys": "2.3.0",
     "husky": "8.0.3",
     "hygen": "6.2.11",

@@ -32,7 +32,8 @@
     "sort-destructure-keys",
     "typescript-sort-keys",
     "strict-dependencies",
-    "import-access"
+    "import-access",
+    "tree-shakable"
   ],
   "extends": [
     "eslint:recommended",
@@ -49,6 +50,7 @@
 
     // import
     "import-access/jsdoc": ["error"],
+    "tree-shakable/import-star": ["error"],
     "strict-dependencies/strict-dependencies": [
       "error",
       [
