@@ -71,9 +71,14 @@
           "allowSameModule": false
         },
         {
-          "module": "page-components/**/*",
+          "module": "src/page-components/**/*",
           "allowReferenceFrom": ["src/pages/**/*"],
           "allowSameModule": false
+        },
+        {
+          "module": "src/components/**/*",
+          "allowReferenceFrom": ["src/pages/**/*", "src/page-components/**/*", "src/features/**/*"],
+          "allowSameModule": true
         },
         {
           "module": "next/router",
