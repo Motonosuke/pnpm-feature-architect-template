@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Albums } from '@/features/albums/components';
+import { Albums } from '@/features/albums/components/Albums';
 
 export const AlbumsPage: FC = () => {
   return (

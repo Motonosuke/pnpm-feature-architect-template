@@ -54,9 +54,20 @@
     "strict-dependencies/strict-dependencies": [
       "error",
       [
+        // HYGEN_INJECT
         {
-          "module": "features/**/components/**",
-          "allowReferenceFrom": ["src/page-components/**/*"],
+          "module": "src/features/albums/**/*",
+          "allowReferenceFrom": ["src/page-components/**/*", "src/stores/**/*", "src/providers/**/*"],
+          "allowSameModule": true
+        },
+        {
+          "module": "src/features/posts/**/*",
+          "allowReferenceFrom": ["src/page-components/**/*", "src/stores/**/*", "src/providers/**/*"],
+          "allowSameModule": true
+        },
+        {
+          "module": "src/features/*",
+          "allowReferenceFrom": ["src/page-components/**/*", "src/stores/**/*", "src/providers/**/*"],
           "allowSameModule": false
         },
         {

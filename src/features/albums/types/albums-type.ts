@@ -7,19 +7,10 @@ const zAlbumScheme = z.object({
 });
 const zAlbumsScheme = z.array(zAlbumScheme);
 
-/**
- * @package
- */
 export type Album = z.infer<typeof zAlbumScheme>;
 
-/**
- * @package
- */
 export type Albums = z.infer<typeof zAlbumsScheme>;
 
-/**
- * @package
- */
 export class AlbumsEntity {
   readonly id!: number;
   readonly title!: string;

@@ -2,12 +2,11 @@ import useSWR from 'swr';
 
 import { axios } from '@/libs/axios';
 
-import { Posts, PostsEntity } from '@/features/posts/types';
+import { Posts, PostsEntity } from '@/features/posts/types/posts-type';
 
 /**
  * Postsを取得
  * @returns
- * @package
  */
 export const useGetPosts = () => {
   return useSWR(`https://jsonplaceholder.typicode.com/posts`, (url: string) => getPosts(url), {

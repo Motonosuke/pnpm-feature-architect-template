@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import { useAlbumsMutators, useAlbumsState } from '@/stores/albums';
 
-import { useFetchAlbums } from '@/features/albums/hooks';
+import { useFetchAlbums } from '@/features/albums/hooks/useFetchAlbums';
 
 type Props = {
   children: React.ReactNode;
