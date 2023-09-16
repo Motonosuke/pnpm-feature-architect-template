@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Posts } from '@/features/posts/components';
+import { Posts } from '@/features/posts/components/Posts';
 
 export const HomePage: FC = () => {
   return (

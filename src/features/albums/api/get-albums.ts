@@ -2,12 +2,11 @@ import useSWR from 'swr';
 
 import { axios } from '@/libs/axios';
 
-import { Albums, AlbumsEntity } from '@/features/albums/types';
+import { Albums, AlbumsEntity } from '@/features/albums/types/albums-type';
 
 /**
  * Postsを取得
  * @returns
- * @package
  */
 
 export const useGetAlbums = () => {

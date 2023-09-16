@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { atom, useRecoilValue, useSetRecoilState } from 'recoil';
 
-import { Albums } from '@/features/albums/types';
+import { Albums } from '@/features/albums/types/albums-type';
 
 type AlbumsState = {
   albums: Albums | null;

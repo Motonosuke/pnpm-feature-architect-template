@@ -1,8 +1,5 @@
-import { useGetAlbums } from '@/features/albums/api';
+import { useGetAlbums } from '@/features/albums/api/get-albums';
 
-/**
- * @package
- */
 export const useFetchAlbums = () => {
   const { data: albumsData } = useGetAlbums();
 

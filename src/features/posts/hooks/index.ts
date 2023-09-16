@@ -1,1 +1,0 @@
-export { useFetchPosts } from './useFetchPosts';

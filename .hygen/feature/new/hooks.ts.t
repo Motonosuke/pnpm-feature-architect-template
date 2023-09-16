@@ -4,11 +4,8 @@ unless_exists: true
 ---
 import useSWR from 'swr';
 
-import { <%= api_category %> } from "@/features/<%= feature_name %>/apis";
+import { <%= api_category %> } from "@/features/<%= feature_name %>/apis/<%= api_category %>";
 
-/**
- * @package
- */
 export const useFetch = () => {
   const key = 'hoge'
   return useSWR(key, () => <%= api_category %>(), {

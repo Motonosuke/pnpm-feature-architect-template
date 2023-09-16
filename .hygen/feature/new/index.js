@@ -47,6 +47,7 @@ module.exports = {
       const api_path = `src/features/${feature_name}/apis`;
       const component_path = `src/features/${feature_name}/components`;
       const hooks_path = `src/features/${feature_name}/hooks`;
+      const export_path = `src/features/${feature_name}`;
 
       const upper_component_name = convertToUpperCamelCase(component_name);
 
@@ -55,6 +56,7 @@ module.exports = {
         api_path,
         component_path,
         hooks_path,
+        export_path,
         upper_component_name,
       };
     });

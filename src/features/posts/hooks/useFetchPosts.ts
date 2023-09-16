@@ -1,4 +1,4 @@
-import { useGetPosts } from '@/features/posts/apis';
+import { useGetPosts } from '@/features/posts/apis/get-post';
 
 export const useFetchPosts = () => {
   const { data: postsData } = useGetPosts();
