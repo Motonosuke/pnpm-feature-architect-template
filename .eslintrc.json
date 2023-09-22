@@ -57,12 +57,12 @@
         // HYGEN_INJECT
         {
           "module": "src/features/albums/**/*",
-          "allowReferenceFrom": ["src/page-components/**/*", "src/stores/**/*", "src/providers/**/*"],
+          "allowReferenceFrom": ["src/features/albums"],
           "allowSameModule": true
         },
         {
           "module": "src/features/posts/**/*",
-          "allowReferenceFrom": ["src/page-components/**/*", "src/stores/**/*", "src/providers/**/*"],
+          "allowReferenceFrom": ["src/features/posts"],
           "allowSameModule": true
         },
         {
