@@ -1,10 +1,10 @@
 import { useCallback } from 'react';
 import { atom, useRecoilValue, useSetRecoilState } from 'recoil';
 
-import { AlbumType } from '@/features/albums';
+import { Albums } from '@/services/albums/get-albums';
 
 type AlbumsState = {
-  albums: AlbumType | null;
+  albums: Albums | null;
 };
 
 const albumsRecoilState = atom<AlbumsState>({
@@ -25,6 +25,6 @@ export const useAlbumsState = () => {
  */
 export const useAlbumsMutators = () => {
   const setState = useSetRecoilState(albumsRecoilState);
-  const setAlbumsState = useCallback((albums: AlbumType | null) => setState({ albums }), [setState]);
+  const setAlbumsState = useCallback((albums: Albums | null) => setState({ albums }), [setState]);
   return { setAlbumsState };
 };

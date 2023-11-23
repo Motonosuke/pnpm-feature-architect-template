@@ -1,5 +1,5 @@
 type CookieKeys = {
-  [key in string]: string;
+  [key in string as Uppercase<key>]: string;
 };
 
 export const COOKIE_KEYS = {

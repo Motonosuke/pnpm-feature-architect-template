@@ -1,5 +1,5 @@
 type Env = {
-  [key in string]: string;
+  [key in string as Uppercase<key>]: string;
 };
 
 export const ENV = {
