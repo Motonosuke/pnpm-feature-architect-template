@@ -1,15 +1,14 @@
 import { LoadingSpinner } from '@/components/Loading';
-
-import { useAlbumsState } from '@/stores/albums';
+import { useFetchAlbums } from '@/features/albums/hooks/useFetchAlbums';
 
 export const Albums = () => {
-  const { albums: albumsGlobalState } = useAlbumsState();
+  const { data: albumsData } = useFetchAlbums();
 
-  if (!albumsGlobalState) return <LoadingSpinner />;
+  if (!albumsData) return <LoadingSpinner />;
 
   return (
     <ul>
-      {albumsGlobalState.map((album) => (
+      {albumsData.map((album) => (
         <li key={album.id}>{album.title}</li>
       ))}
     </ul>

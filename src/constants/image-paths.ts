@@ -1,5 +1,5 @@
 type ImagePaths = {
-  [key in string]: `/${string}`;
+  [key in string as Uppercase<key>]: `/${string}`;
 };
 
 export const IMAGE_PATHS = {

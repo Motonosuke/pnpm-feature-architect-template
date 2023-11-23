@@ -1,5 +1,8 @@
 type RoutePaths = {
-  [key in string]: `/${string}` | { [key in string]: `/${string}` } | `https://${string}`;
+  [key in string as Uppercase<key>]:
+    | `/${string}`
+    | { [key in string as Uppercase<key>]: `/${string}` }
+    | `https://${string}`;
 };
 
 export const ROUTE_PATHS = {
