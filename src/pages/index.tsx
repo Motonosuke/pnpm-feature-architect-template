@@ -3,8 +3,8 @@ import { CustomNextPage } from 'next';
 import { MainLayout } from '@/components/Layouts';
 import { HomePage } from '@/page-components/home';
 
-const Home: CustomNextPage = () => {
-  return <HomePage />;
+const Home: CustomNextPage = (page) => {
+  return <HomePage {...page} />;
 };
 
 Home.getLayout = MainLayout;

@@ -5,6 +5,7 @@ unless_exists: true
 import { CustomNextPage, GetServerSideProps } from 'next';
 
 import { MainLayout } from '@/components/Layouts';
+import { <%= upper_page_name %>Page } from '@/page-components/<%= page_name %>';
 
 <% if (is_ssr) { %>
 export const getServerSideProps: GetServerSideProps = async ({ query, req }) => {
@@ -18,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query, req }) => 
 <%}%>
 
 const <%= upper_page_name %>: CustomNextPage = (props) => {
-  return <%= upper_page_name_main %>
+  return <<%= upper_page_name %>Page {...props} />;
 };
 
 <%= upper_page_name %>.getLayout = MainLayout;
