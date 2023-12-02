@@ -56,6 +56,12 @@
       [
         // HYGEN_INJECT
         {
+          "module": "features/baz/**/*",
+          "allowReferenceFrom": ["src/page-components/**/*", "src/stores/**/*", "src/providers/**/*"],
+          "allowSameModule": true
+        },
+
+        {
           "module": "src/features/albums/**/*",
           "allowReferenceFrom": ["src/features/albums"],
           "allowSameModule": true
