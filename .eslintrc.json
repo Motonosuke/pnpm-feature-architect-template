@@ -56,6 +56,12 @@
       [
         // HYGEN_INJECT
         {
+          "module": "features/zoo/**/*",
+          "allowReferenceFrom": ["src/page-components/**/*", "src/stores/**/*", "src/providers/**/*"],
+          "allowSameModule": true
+        },
+
+        {
           "module": "features/poyo/**/*",
           "allowReferenceFrom": ["src/page-components/**/*", "src/stores/**/*", "src/providers/**/*"],
           "allowSameModule": true
