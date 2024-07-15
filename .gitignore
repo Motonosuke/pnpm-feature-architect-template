@@ -26,6 +26,11 @@ yarn-error.log*
 pnpm-debug.log*
 pnpm-error.log*
 
+# lock
+yarn.lock
+pnpm-lock.yaml
+pnpm-lock.json
+
 # local env files
 .env*.local
 

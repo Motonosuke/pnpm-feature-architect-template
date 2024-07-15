@@ -5,7 +5,7 @@
   // EsLint
   // ESLintに対応しているファイルは保存時にESLintによるフォーマットを行う
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   // "eslint.packageManager": "pnpm",
   "eslint.run": "onSave",
