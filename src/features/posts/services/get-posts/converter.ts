@@ -1,5 +1,6 @@
 import { getPosts } from '@/backend/posts/get-posts';
-import { Posts } from '@/services/posts/get-posts/model';
+
+import { Posts } from '@/features/posts/services/get-posts/model';
 
 export const convertGetPosts = (data: Awaited<ReturnType<typeof getPosts>>): Posts => {
   return data.map((post) => ({
