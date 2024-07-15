@@ -1,6 +1,7 @@
 import { getPosts } from '@/backend/posts/get-posts';
-import { convertGetPosts } from '@/services/posts/get-posts/converter';
-import { Posts } from '@/services/posts/get-posts/model';
+
+import { convertGetPosts } from '@/features/posts/services/get-posts/converter';
+import { Posts } from '@/features/posts/services/get-posts/model';
 
 export const getPostsService = async (): Promise<Posts> => {
   const data = await getPosts();

@@ -4,7 +4,7 @@ import { QueryReturnType } from '@/types/type';
 import { ApiError } from '@/utils/api-error';
 import { useQuery } from '@/hooks/useQuery';
 
-import { getPostsService, Posts } from '@/services/posts/get-posts';
+import { getPostsService, Posts } from '@/features/posts/services/get-posts';
 
 type UseFetchPosts = () => QueryReturnType<Posts>;
 
