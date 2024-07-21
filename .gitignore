@@ -36,5 +36,12 @@ pnpm-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# 環境変数
+.env
+.env.development
+.env.development.local
+.env.production
+.env.production.local
+
 
 tsconfig.tsbuildinfo

@@ -1,6 +1,6 @@
 export const LoadingSpinner = () => {
   return (
-    <div>
+    <div data-testid="loading-spinner">
       <div role="status">
         <svg
           aria-hidden="true"
