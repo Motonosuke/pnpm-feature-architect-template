@@ -23,7 +23,8 @@
     "create:page": "hygen page new",
     "create:feature": "hygen feature new",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "vitest \"src\""
   },
   "husky": {
     "hooks": {
@@ -67,10 +68,14 @@
     "@storybook/nextjs": "8.2.2",
     "@storybook/react": "8.2.2",
     "@storybook/testing-library": "0.2.2",
+    "@testing-library/jest-dom": "6.4.6",
+    "@testing-library/react": "16.0.0",
     "@typescript-eslint/eslint-plugin": "7.16.0",
     "@typescript-eslint/parser": "7.16.0",
+    "@vitejs/plugin-react": "4.3.1",
     "axios": "1.7.2",
     "axios-case-converter": "1.1.1",
+    "dotenv": "16.4.5",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-import": "2.28.1",
     "eslint-plugin-import-access": "2.1.1",
@@ -82,8 +87,10 @@
     "eslint-plugin-typescript-sort-keys": "2.3.0",
     "husky": "9.0.11",
     "hygen": "6.2.11",
+    "jsdom": "24.1.1",
     "lint-staged": "15.2.7",
     "markuplint": "4.9.2",
+    "msw": "^2.3.2",
     "nookies": "2.5.2",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.5",
@@ -91,6 +98,7 @@
     "storybook": "8.2.2",
     "swr": "2.2.5",
     "ts-prune": "0.10.3",
+    "vitest": "2.0.3",
     "zod": "3.23.8"
   }
 }
