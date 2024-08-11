@@ -151,7 +151,7 @@ importers:
         specifier: 24.1.1
         version: 24.1.1
       lefthook:
-        specifier: ^1.7.9
+        specifier: 1.7.9
         version: 1.7.9
       markuplint:
         specifier: 4.9.2

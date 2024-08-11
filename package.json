@@ -74,7 +74,7 @@
     "eslint-plugin-typescript-sort-keys": "2.3.0",
     "hygen": "6.2.11",
     "jsdom": "24.1.1",
-    "lefthook": "^1.7.9",
+    "lefthook": "1.7.9",
     "markuplint": "4.9.2",
     "msw": "^2.3.2",
     "nookies": "2.5.2",
