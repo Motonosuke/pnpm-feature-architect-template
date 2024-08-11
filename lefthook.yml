@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  commands:
+    prettier:
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+      run: pnpm run lint:prettier && git update-index --again
+    eslint:
+      glob: '*.{js,jsx,ts,tsx}'
+      run: pnpm run lint:eslint && git update-index --again
