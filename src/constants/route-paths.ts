@@ -1,15 +1,15 @@
 type RoutePaths = {
-  [key in string as Uppercase<key>]:
+  [Key in string as Uppercase<Key>]:
     | `/${string}`
-    | { [key in string as Uppercase<key>]: `/${string}` }
+    | { [Key in string as Uppercase<Key>]: `/${string}` }
     | `https://${string}`;
 };
 
 export const ROUTE_PATHS = {
-  HOME: '/',
-  LOGIN: '/login',
+  HOME: "/",
+  LOGIN: "/login",
   SETTING: {
-    ACCOUNT: '/setting/account',
-    EMAIL: '/setting/email',
+    ACCOUNT: "/setting/account",
+    EMAIL: "/setting/email",
   },
 } as const satisfies RoutePaths;

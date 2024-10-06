@@ -1,1 +1,1 @@
-export { useRouter as NextUseRouter } from 'next/router';
+export { useRouter as NextUseRouter } from "next/router";

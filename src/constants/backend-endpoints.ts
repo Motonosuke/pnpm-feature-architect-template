@@ -1,15 +1,15 @@
 type BackendEndpoints = {
-  [key in string as Uppercase<key>]:
+  [Key in string as Uppercase<Key>]:
     | `/${string}`
-    | { [key in string as Uppercase<key>]: `/${string}` }
+    | { [Key in string as Uppercase<Key>]: `/${string}` }
     | `https://${string}`
-    | { [key in string as Uppercase<key>]: `https://${string}` };
+    | { [Key in string as Uppercase<Key>]: `https://${string}` };
 };
 
 export const BACKEND_ENDPOINTS = {
-  HOGE: '/hoge',
+  HOGE: "/hoge",
   JSON_PLACEHOLDER: {
-    ALBUMS: 'https://jsonplaceholder.typicode.com/albums',
-    POSTS: 'https://jsonplaceholder.typicode.com/posts',
+    ALBUMS: "https://jsonplaceholder.typicode.com/albums",
+    POSTS: "https://jsonplaceholder.typicode.com/posts",
   },
 } as const satisfies BackendEndpoints;

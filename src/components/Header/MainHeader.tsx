@@ -1,6 +1,6 @@
-import { ROUTE_PATHS } from '@/constants/route-paths';
+import { ROUTE_PATHS } from "@/constants/route-paths";
 
-import { NextLink } from '@/libs/link';
+import { NextLink } from "@/libs/link";
 
 export const MainHeader = () => {
   return (

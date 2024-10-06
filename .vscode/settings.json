@@ -1,24 +1,13 @@
 {
   // Commoon
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // EsLint
-  // ESLintに対応しているファイルは保存時にESLintによるフォーマットを行う
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+  "[javascript][typescript][javascriptreact][typescriptreact][json][jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    }
   },
-  // "eslint.packageManager": "pnpm",
-  "eslint.run": "onSave",
-  // Prettier
-  "prettier.configPath": ".prettierrc.json",
-  "prettier.prettierPath": "node_modules/prettier",
-  // プロジェクトに.prettierrcが存在する場合のみフォーマットを行う
-  "prettier.requireConfig": true,
-  "cSpell.words": [
-    "ianvs",
-    "markuplint",
-    "tailwindcss",
-    "typecheck"
-  ],
-  "typescript.preferences.importModuleSpecifier": "non-relative",
+  // importの自動補完を絶対パスを優先する
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }

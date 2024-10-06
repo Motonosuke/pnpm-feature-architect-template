@@ -1,5 +1,5 @@
-import { LoadingSpinner } from '@/components/Loading';
-import { useFetchPosts } from '@/features/posts/hooks/useFetchPosts';
+import { LoadingSpinner } from "@/components/Loading";
+import { useFetchPosts } from "@/features/posts/hooks/useFetchPosts";
 
 export const Posts = () => {
   const { data: postsData } = useFetchPosts();
