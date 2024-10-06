@@ -1,8 +1,8 @@
-import { ReactElement } from 'react';
-import { NextPage } from 'next';
-import { AppProps } from 'next/app';
+import type { NextPage } from "next";
+import type { AppProps } from "next/app";
+import type { ReactElement } from "react";
 
-import 'tailwindcss/tailwind.css';
+import "tailwindcss/tailwind.css";
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactElement;

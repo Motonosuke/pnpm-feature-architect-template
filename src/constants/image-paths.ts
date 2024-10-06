@@ -1,7 +1,7 @@
 type ImagePaths = {
-  [key in string as Uppercase<key>]: `/${string}`;
+  [Key in string as Uppercase<Key>]: `/${string}`;
 };
 
 export const IMAGE_PATHS = {
-  SAMPLE: '/images/sample.png',
+  SAMPLE: "/images/sample.png",
 } as const satisfies ImagePaths;

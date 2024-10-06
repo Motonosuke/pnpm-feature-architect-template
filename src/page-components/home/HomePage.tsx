@@ -1,6 +1,6 @@
-import { FC } from 'react';
+import type { FC } from "react";
 
-import { Posts } from '@/features/posts';
+import { Posts } from "@/features/posts";
 
 export const HomePage: FC = () => {
   return (

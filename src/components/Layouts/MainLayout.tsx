@@ -1,7 +1,7 @@
-import type { CustomLayout } from 'next';
-import { RecoilRoot } from 'recoil';
+import type { CustomLayout } from "next";
+import { RecoilRoot } from "recoil";
 
-import { MainHeader } from '@/components/Header';
+import { MainHeader } from "@/components/Header";
 
 export const MainLayout: CustomLayout = (page) => {
   return (

@@ -1,7 +1,7 @@
 type CookieKeys = {
-  [key in string as Uppercase<key>]: string;
+  [Key in string as Uppercase<Key>]: string;
 };
 
 export const COOKIE_KEYS = {
-  HOGE_ID: 'hoge_id',
+  HOGE_ID: "hoge_id",
 } as const satisfies CookieKeys;

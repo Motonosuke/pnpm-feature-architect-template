@@ -1,6 +1,6 @@
-import { KeyedMutator } from 'swr/_internal';
+import type { KeyedMutator } from "swr/_internal";
 
-import { ApiError } from '@/utils/api-error';
+import type { ApiError } from "@/utils/api-error";
 
 export type QueryReturnType<Data, ErrorData = undefined> = {
   data: Data | undefined;

@@ -1,6 +1,6 @@
-import { axios } from '@/libs/axios';
+import { axios } from "@/libs/axios";
 
-const BASE_URL = `https://localhost:3000/api/v2`;
+const BASE_URL = "https://localhost:3000/api/v2";
 
 export const initial = (): void => {
   axios.interceptors.request.use((config) => {

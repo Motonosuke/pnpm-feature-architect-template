@@ -1,6 +1,6 @@
-import type { CustomLayout } from 'next';
+import type { CustomLayout } from "next";
 
-import { MainHeader } from '@/components/Header';
+import { MainHeader } from "@/components/Header";
 
 export const ErrorLayout: CustomLayout = (page) => {
   return (

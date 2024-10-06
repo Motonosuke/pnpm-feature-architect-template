@@ -2,7 +2,7 @@ name: Lint
 on:
   pull_request:
     branches:
-      - feature/*
+    - feature/*
       - develop
       - main
 jobs:
@@ -16,15 +16,12 @@ jobs:
           version: 8
       - name: Install packages
         run: pnpm install --frozen-lockfile
+      
+      - name: Biome
+        run: pnpm run lint:biome
 
       - name: Typecheck
         run: pnpm run typecheck
-
-      - name: Prettier
-        run: pnpm run lint:prettier
-
-      - name: Eslint
-        run: pnpm run lint:eslint
 
       - name: Secretlint
         run: pnpm run lint:secretlint
