@@ -17,7 +17,12 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -25,7 +30,9 @@
     "**/*.tsx",
     ".hygen/feature/new/index.js",
     ".hygen/page/new/index.js",
-    "./vitest.config.ts"
+    "./vitest.config.ts",
+    ".next/types/**/*.ts",
+    "src/features/albums/services/get-albums"
   ],
   "exclude": ["node_modules"]
 }

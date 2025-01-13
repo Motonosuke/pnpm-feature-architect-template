@@ -1,9 +1,6 @@
-import { z } from "zod";
-
 import { BACKEND_ENDPOINTS } from "@/constants/backend-endpoints";
 
-import { axios } from "@/libs/axios";
-import type { AxiosResponse } from "axios";
+import { serverApiClient } from "@/utils/server-api-client";
 
 type Response = {
   body: string;
@@ -13,6 +10,7 @@ type Response = {
 }[];
 
 export const getPosts = async (): Promise<Response> => {
-  const { data } = await axios.get(BACKEND_ENDPOINTS.JSON_PLACEHOLDER.POSTS);
-  return data;
+  return await serverApiClient.get<Response>(
+    BACKEND_ENDPOINTS.JSON_PLACEHOLDER.POSTS,
+  );
 };

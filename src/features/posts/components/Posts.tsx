@@ -1,13 +1,10 @@
-import { LoadingSpinner } from "@/components/Loading";
-import { useFetchPosts } from "@/features/posts/hooks/useFetchPosts";
+import { getPostsService } from "@/features/posts/services/get-posts/service";
 
-export const Posts = () => {
-  const { data: postsData } = useFetchPosts();
-
-  if (!postsData) return <LoadingSpinner />;
+export const Posts = async () => {
+  const postsData = await getPostsService();
 
   return (
-    <ul>
+    <ul className="flex flex-col gap-4">
       {postsData.map((post) => (
         <li key={post.id}>{post.body}</li>
       ))}

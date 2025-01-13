@@ -48,7 +48,6 @@ ignore:
   - .next
   - .git
   - .hygen
-  - .husky
   - .vscode
   - src/pages/_app.tsx
   - src/pages/_document.tsx

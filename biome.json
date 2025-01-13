@@ -40,6 +40,14 @@
           }
         }
       },
+      "correctness": {
+        "noUnusedVariables": {
+          "level": "error"
+        },
+        "noUnusedImports": {
+          "level": "error"
+        }
+      },
       "style": {
         "useNamingConvention": {
           "level": "error",
@@ -67,7 +75,7 @@
                 "selector": {
                   "kind": "objectLiteralProperty"
                 },
-                "formats": ["camelCase", "CONSTANT_CASE"]
+                "formats": ["camelCase", "PascalCase", "CONSTANT_CASE"]
               },
               {
                 "selector": {
