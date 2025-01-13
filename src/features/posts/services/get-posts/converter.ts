@@ -1,5 +1,4 @@
-import type { getPosts } from "@/backend/posts/get-posts";
-
+import type { getPosts } from "@/features/posts/services/get-posts/get-posts";
 import type { Posts } from "@/features/posts/services/get-posts/model";
 
 export const convertGetPosts = (
